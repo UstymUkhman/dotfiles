@@ -1,8 +1,12 @@
 *
 
-!nvim/*
+!alacritty/*
 !hypr*
 *.bak.*
+!nvim/*
+!walker/*
+!waybar/*
+
 !.gitignore
 !LICENSE
 !README.md
