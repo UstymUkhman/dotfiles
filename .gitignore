@@ -1,5 +1,6 @@
 *
 
+# Folders:
 !alacritty/*
 !hypr*
 *.bak.*
@@ -7,6 +8,8 @@
 !walker/*
 !waybar/*
 
+# Files:
 !.gitignore
 !LICENSE
 !README.md
+!cmd.sh
