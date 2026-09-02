@@ -2,6 +2,7 @@
 
 # Folders:
 !alacritty/*
+!foot/*
 !hypr*
 *.bak.*
 !nvim/*
