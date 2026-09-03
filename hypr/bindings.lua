@@ -20,6 +20,9 @@
 -- hl.unbind("SUPER + SPACE")
 -- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu toggle root")
 
+hl.unbind("SUPER + SHIFT + G")
+o.bind("SUPER + SHIFT + G", "GitHub", "omarchy-launch-webapp https://github.com/feed")
+
 -- Disable a default binding without replacing it.
 -- hl.unbind("SUPER + SHIFT + B")
 

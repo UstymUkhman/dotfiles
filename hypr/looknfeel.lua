@@ -1,29 +1,29 @@
 -- Change the default Omarchy look'n'feel.
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#general
--- hl.config({
---   general = {
---     -- No gaps between windows or borders.
---     gaps_in = 0,
---     gaps_out = 0,
---     border_size = 0,
---
---     -- Change to niri-like side-scrolling layout.
---     layout = "scrolling",
---   },
--- })
+hl.config({
+  general = {
+    -- No gaps between windows or borders.
+    gaps_in = 2,
+    gaps_out = 4,
+    -- border_size = 0,
+
+    -- Change to niri-like side-scrolling layout.
+    -- layout = "scrolling",
+  },
+})
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#decoration
--- hl.config({
---   decoration = {
---     -- Use round window corners.
---     rounding = 8,
---
---     -- Dim unfocused windows (0.0 = no dim, 1.0 = fully dimmed).
---     dim_inactive = true,
---     dim_strength = 0.15,
---   },
--- })
+hl.config({
+  decoration = {
+    -- Use round window corners.
+    -- rounding = 8,
+
+    -- Dim unfocused windows (0.0 = no dim, 1.0 = fully dimmed).
+    dim_inactive = true,
+    dim_strength = 0.1,
+  },
+})
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#animations
 -- hl.config({
@@ -48,3 +48,13 @@
 --     column_width = 0.97,
 --   },
 -- })
+
+-- hl.curve( "overshoot", { type = "bezier", points = { {0.05, 0.9}, {0.1, 1.05} } } )
+hl.curve( "overshoot", { type = "bezier", points = { {0.5, 0.9}, {0.1, 1.1} } } )
+hl.curve( "rubber", { type = "spring", mass = 1, stiffness = 75, dampening = 10 } )
+
+hl.animation({ leaf = "windows", enabled = true, speed = 4, bezier = "overshoot" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 4, bezier = "overshoot", style = "popin 75%" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 2, bezier = "linear", style = "popin 100%" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "default", style = "slidefade 25%" })
+-- hl.animation({ leaf = "workspaces", enabled = true, speed = 1, spring = "rubber", style = "slidefade 25%" })
