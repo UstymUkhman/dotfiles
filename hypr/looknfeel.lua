@@ -55,6 +55,6 @@ hl.curve( "rubber", { type = "spring", mass = 1, stiffness = 75, dampening = 10 
 
 hl.animation({ leaf = "windows", enabled = true, speed = 4, bezier = "overshoot" })
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 4, bezier = "overshoot", style = "popin 75%" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 2, bezier = "linear", style = "popin 100%" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 2, bezier = "linear", style = "popin 75%" })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "default", style = "slidefade 25%" })
 -- hl.animation({ leaf = "workspaces", enabled = true, speed = 1, spring = "rubber", style = "slidefade 25%" })

@@ -17,14 +17,12 @@
 
 -- Change an existing binding by unbinding it first, then binding the key again.
 -- This example changes SUPER+SPACE from the launcher to the Omarchy root menu.
--- hl.unbind("SUPER + SPACE")
--- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu toggle root")
-
 hl.unbind("SUPER + SHIFT + G")
 o.bind("SUPER + SHIFT + G", "GitHub", "omarchy-launch-webapp https://github.com/feed")
 
 -- Disable a default binding without replacing it.
--- hl.unbind("SUPER + SHIFT + B")
+hl.unbind("SUPER + SLASH")
+hl.unbind("SUPER + ALT + SLASH")
 
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
