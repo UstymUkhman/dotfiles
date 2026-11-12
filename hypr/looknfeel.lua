@@ -58,3 +58,8 @@ hl.animation({ leaf = "windowsIn", enabled = true, speed = 4, bezier = "overshoo
 hl.animation({ leaf = "windowsOut", enabled = true, speed = 2, bezier = "linear", style = "popin 75%" })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "default", style = "slidefade 25%" })
 -- hl.animation({ leaf = "workspaces", enabled = true, speed = 1, spring = "rubber", style = "slidefade 25%" })
+
+-- Opt another application in to Omarchy's standard transparency.
+-- Find its class with: hyprctl clients
+-- o.transparent_window("my-app")
+-- o.transparent_window("my-app", "0.9 0.85") -- Custom active/inactive opacity.
