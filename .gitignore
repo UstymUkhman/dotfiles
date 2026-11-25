@@ -1,0 +1,16 @@
+*
+
+# Folders:
+!alacritty/*
+!foot/*
+!hypr*
+*.bak.*
+!nvim/*
+!walker/*
+!waybar/*
+
+# Files:
+!.gitignore
+!LICENSE
+!README.md
+!cmd.sh
